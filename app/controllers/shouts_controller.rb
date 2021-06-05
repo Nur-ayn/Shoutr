@@ -18,7 +18,7 @@ class ShoutsController < ApplicationController
     end
 
     def content_params
-        params.require(:shout).require(:content).permit
+        params.require(:shout).require(:content).permit!
     end
 
     def redirect_options_for(shout)
